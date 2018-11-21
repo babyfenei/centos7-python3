@@ -1,0 +1,4 @@
+{
+  "http": "PROXY_HTTP",
+  "https": "PROXY_HTTPS"
+}

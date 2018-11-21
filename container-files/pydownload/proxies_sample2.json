@@ -1,0 +1,4 @@
+{
+    "http": "http://shadowsocks-privoxy:7070",
+    "https": "https://shadowsocks-privoxy:7070"
+}
