@@ -19,8 +19,8 @@ ENV pythonpath=/usr/bin/python \
     PROXY_HTTP=http://shadowsocks-privoxy:8118 \
     PROXY_HTTPS=https://shadowsocks-privoxy:8118 \
     TIMEZONE=Asia/Shanghai \
-    DOWNLOAD_SITE=rainyfirefart
-
+    DOWNLOAD_SITE=rainyfirefart \
+    DOWNLOAD_PATH=/data/babyfenei/files/study
 RUN \
 tar -xf  /Python-3.6.6.tar.gz && \
 cd /Python-3.6.6 && \
