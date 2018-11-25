@@ -2,6 +2,8 @@
 
 ---
 
+[![](https://images.microbadger.com/badges/image/babyfenei/centos7-python3.svg)](https://microbadger.com/images/babyfenei/centos7-python3 "Get your own image badge on microbadger.com")  [![](https://images.microbadger.com/badges/version/babyfenei/centos7-python3.svg)](https://microbadger.com/images/babyfenei/centos7-python3 "Get your own version badge on microbadger.com")  [![](https://images.microbadger.com/badges/license/babyfenei/centos7-python3.svg)](https://microbadger.com/images/babyfenei/centos7-python3 "Get your own license badge on microbadger.com")
+
 ### Shadowsocks-privoxy deployment
 
 **For more information about shadowsocks-privoxy see our [documentation.]https://hub.docker.com/r/bluebu/shadowsocks-privoxy/) **
@@ -51,4 +53,5 @@ In this Image you can use environmental some variables.
 | TIMEZONE | Asia/Shanghai | linux timezone |
 | DOWNLOAD_SITE | sitename| download site name |
 | DOWNLOAD_PATH | /data | download path |
+
 
