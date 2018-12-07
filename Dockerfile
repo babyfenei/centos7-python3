@@ -16,11 +16,8 @@ VOLUME ["/data"]
 COPY container-files /
 
 ENV pythonpath=/usr/bin/python \
-    PROXY_HTTP=http://shadowsocks-privoxy:8118 \
-    PROXY_HTTPS=https://shadowsocks-privoxy:8118 \
     TIMEZONE=Asia/Shanghai \
-    DOWNLOAD_SITE=rainyfirefart \
-    DOWNLOAD_PATH=/data/babyfenei/files/study
+
 RUN \
 tar -xf  /Python-3.6.6.tar.gz && \
 cd /Python-3.6.6 && \
@@ -35,17 +32,6 @@ sed -i '1c #!/usr/bin/python2' /usr/libexec/urlgrabber-ext-down && \
 rm -rf /Python-3.6.6.tar.gz && rm -rf /Python-3.6.6
 
 RUN \
-pip install --upgrade pip && \
-pip install xmltodict && \
-pip install requests && \
-pip install six && \
-pip install PySocks 
+pip install --upgrade pip
 
-COPY pydown.sh /pydown.sh
-COPY start.sh /start.sh
-RUN \
-chmod +x /start.sh && \
-chmod +x /pydown.sh
-
-CMD ["/start.sh"]
 
