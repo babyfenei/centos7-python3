@@ -16,7 +16,7 @@ VOLUME ["/data"]
 COPY container-files /
 
 ENV pythonpath=/usr/bin/python \
-    TIMEZONE=Asia/Shanghai \
+    TIMEZONE=Asia/Shanghai 
 
 RUN \
 tar -xf  /Python-3.6.6.tar.gz && \
@@ -27,11 +27,10 @@ mv -f $pythonpath ${pythonpath}.bak && \
 ln -s /usr/local/python3/bin/python3 $pythonpath && \
 rm -f /usr/bin/pip && \
 ln -s /usr/local/python3/bin/pip3  /usr/bin/pip && \
-sed -i '1c #!/usr/bin/python2' /usr/bin/yum && \
-sed -i '1c #!/usr/bin/python2' /usr/libexec/urlgrabber-ext-down && \
+#sed -i '1c #!/usr/bin/python2' /usr/bin/yum && \
+#sed -i '1c #!/usr/bin/python2' /usr/libexec/urlgrabber-ext-down && \
 rm -rf /Python-3.6.6.tar.gz && rm -rf /Python-3.6.6
 
-RUN \
-pip install --upgrade pip
+RUN pip install --upgrade pip
 
 
